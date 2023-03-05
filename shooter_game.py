@@ -45,10 +45,6 @@ class Player(GameSprite):
             self.rect.x -= self.speed
         if keys[K_RIGHT] and self.rect.x < win_width - 80:
             self.rect.x += self.speed
-        if keys[K_DOWN] and self.rect.y > 5:
-            self.rect.y += self.speed
-        if keys[K_UP] and self.rect.y > 5:
-            self.rect.y -= self.speed
     def fire(self):
         potron = Potron('bullet.png', self.rect.centerx, self.rect.top, 20)
         potrony.add(potron)
